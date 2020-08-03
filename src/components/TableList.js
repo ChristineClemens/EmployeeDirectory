@@ -9,10 +9,10 @@ function TableList( props ){
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                <th scope="col">#</th>
                     <th scope="col">Name</th>
+                    <th scope="col">Email</th>
                     <th scope="col">Location</th>
-                    <th scope="col">Pet Type</th>
                 </tr>
             </thead>
             <tbody>
