@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-// import TableFilter from './components/TableFilter';
-// import TableOrder from './components/TableOrder';
-// import TableList from './components/TableList';
-// import employees from './employees.json'
+import TableFilter from './components/TableFilter';
+import TableOrder from './components/TableOrder';
+import TableList from './components/TableList';
+import employees from './employees.json'
 
 function App () {
     const [ tableManager, setList ]= useState( { list: employees, filter: '', order: 'id' } )
