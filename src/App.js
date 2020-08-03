@@ -22,15 +22,19 @@ function App () {
     }
 
     return(
-        <div class="row d-flex justify-content-center container">
-
-            <h1>Employee List</h1>
-            <form>
-                <TableFilter filter={tableManager.filter} updateFilter={updateFilter} />
-                <TableOrder order={tableManager.order} updateOrder={updateOrder} />
-            </form>
-
-            <TableList employees={tableManager.list} />
+        <div className="container">
+            <div className="row d-flex justify-content-center container">
+                <div className = "jumbotron jumbotron-fluid" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '30px', boxShadow: '10px 10px 5px rgb(173, 169, 158)'}}>
+                <br />
+                <h1 style={{fontFamily: 'Josefin Sans', color: 'rgba(185, 147, 34, 1)', textShadow: '2px 2px 4px #000000'}}>Employee Directory</h1>
+                <br />
+                <form>
+                    <TableFilter filter={tableManager.filter} updateFilter={updateFilter} />
+                    <TableOrder order={tableManager.order} updateOrder={updateOrder} />
+                </form>
+                </div>
+                <TableList employees={tableManager.list} />
+            </div>
         </div>
     )
 }

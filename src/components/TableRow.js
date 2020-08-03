@@ -2,7 +2,7 @@ import React from 'react'
 
 function TableRow( props ){
     return (
-        <tr>
+        <tr style={{fontFamily: 'Open Sans'}}>
             <th scope="row">{props.id}</th>
             <td>{props.name}</td>
             <td>{props.email}</td>

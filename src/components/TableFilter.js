@@ -13,7 +13,7 @@ function TableFilter( props ){
 
     return (
         <div class="mb-3 row">
-            <label for="name" class="col-sm-2 col-form-label">Name Search</label>
+            <label for="name" class="col-sm-2 col-form-label" style={{fontFamily: 'Josefin Sans', color: 'rgba(134, 106, 25, 1)'}}>Search By Name</label>
             <div class="col-sm-10">
                 <input onChange={handleInputChange} type="text" class="form-control" id="name" value={props.filter} />
             </div>

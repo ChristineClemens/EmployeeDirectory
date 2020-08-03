@@ -10,7 +10,7 @@ function TableOrder( props ){
     }
     return (
         <div class="mb-3 row">
-            <label for="inputPassword" class="col-sm-2 col-form-label">Filter</label>
+            <label for="inputPassword" class="col-sm-2 col-form-label" style={{fontFamily: 'Josefin Sans', color: 'rgba(134, 106, 25, 1)'}}>Filter</label>
             <div class="col-sm-10">
                 <select onChange={changeOrder} value={props.order} class="form-select form-select-lg mb-3">
                     <option value='id'>ID</option>
